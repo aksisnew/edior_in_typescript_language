@@ -32,44 +32,20 @@ check the DIR status of the files are they present at the right dir location or 
 
 ## theme initialization 
 
-[ Start: App Launch ]
-         |
-         v
-  / Check Cache \
- <  Is Theme     > --- ( Yes ) ---> [ Run Cached Theme ] ---> [ Theme Loaded ]
-  \ Cached?     /
-         |
-      ( No )
-         |
-         v
-[ Read preference.editor.json ]
-         |
-         v
-[ Identify Theme File Name ]
-         |
-         v
-  / Check File System \
- <  Does Theme File    > --- ( No ) ---> [ Load Default Theme ] ---> [ Theme Loaded ]
-  \ Exist?            /
-         |
-      ( Yes )
-         |
-         v
-[ Run / Load Theme ]
-         |
-         v
-[ Cache Theme Data ]
-         |
-         v
-[ Theme Loaded ]
+```markdown
+[ App Start ]
+   ↓
+( Is Theme Cached? )
+   ├── [ YES ] ──> [ Run Cached Theme ] ──> [ Theme Active ]
+   └── [ NO  ] ──> [ Read preference.editor.json ]
+                         ↓
+                   [ Identify Theme File Name ]
+                         ↓
+                   ( Does File Exist? )
+                      ├── [ YES ] ──> [ Run Theme ] ──> [ Cache Theme ] ──> [ Theme Active ]
+                      └── [ NO  ] ──> [ Load Default Theme ] ─────────────> [ Theme Active ]
 
 
---------------------------------------------------------------------------------
+[ Flush Cache Action ] ──> [ Delete Saved Cache ] ──> ( Forces JSON re-read on next launch )
 
-[ User Triggers "Flush Cache" ]
-         |
-         v
-[ Clear Saved Theme Cache ]
-         |
-         v
-( Next launch skips cache and re-reads preference.editor.json )
+```
