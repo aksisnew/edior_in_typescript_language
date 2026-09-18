@@ -1,0 +1,69 @@
+# ==============================================================================
+# BUILD & COMPILED OUTPUTS
+# ==============================================================================
+/dist/
+/build/
+/out/
+/bin/
+/obj/
+/*.app
+/*.zip
+
+# ==============================================================================
+# DEPENDENCIES
+# ==============================================================================
+/node_modules/
+/.pnpm-store/
+/jspm_packages/
+
+# ==============================================================================
+# ENVIRONMENT & SENSITIVE FILES
+# ==============================================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.pem
+*.key
+*.cert
+*.pfx
+*.p12
+
+# ==============================================================================
+# WORKSPACE & AGENT NOTES
+# ==============================================================================
+AGENT.md
+agent.md
+/agent-workspace/
+/.agent/
+/.copilot/
+
+# ==============================================================================
+# IDE & SYSTEM JUNK
+# ==============================================================================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+/.idea/
+*.suo
+*.user
+*.userosql
+*.sln.docstates
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# Log Files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
