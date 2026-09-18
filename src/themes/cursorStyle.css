@@ -1,24 +1,56 @@
+/* Block Cursor */
 .editor-cursor-block {
-  background-color: var(--accent-primary);
+  background-color: var(--cursor-block-bg);
   color: #121a10;
-  box-shadow: 0 0 8px var(--accent-glow);
+  border: var(--cursor-block-border);
+  border-radius: var(--cursor-block-radius);
+  box-shadow: 0 0 var(--cursor-glow-spread) var(--cursor-glow-color);
+  transition: var(--cursor-transition-smooth);
 }
 
 /* Line / Vertical Cursor */
 .editor-cursor-line {
-  width: 2px;
-  background-color: var(--accent-primary);
-  box-shadow: 0 0 10px var(--accent-primary), 0 0 4px var(--accent-glow);
+  width: var(--cursor-width);
+  border-radius: var(--cursor-border-radius);
+  background-color: var(--cursor-color);
+  box-shadow: 0 0 var(--cursor-glow-spread) var(--cursor-glow-color);
+  filter: var(--cursor-glow-filter);
+  transition: var(--cursor-transition-smooth);
 }
 
 /* Underline Cursor */
 .editor-cursor-underline {
-  border-bottom: 2px solid var(--accent-primary);
-  box-shadow: 0 2px 8px var(--accent-glow);
+  border-bottom: var(--cursor-width) solid var(--cursor-color);
+  border-radius: var(--cursor-border-radius);
+  box-shadow: 0 0.125rem var(--cursor-glow-spread) var(--cursor-glow-color);
+  transition: var(--cursor-transition-smooth);
 }
 
 /* Secondary / Multi-Cursors */
 .editor-cursor-secondary {
-  background-color: var(--accent-secondary);
+  width: var(--cursor-width);
+  border-radius: var(--cursor-border-radius);
+  background-color: var(--cursor-secondary-color);
+  box-shadow: 0 0 var(--cursor-glow-spread) var(--cursor-secondary-glow);
   opacity: 0.8;
+  transition: var(--cursor-transition-smooth);
+}
+
+:root {
+  --cursor-width: 0.156rem;
+  --cursor-border-radius: 0.25rem;
+  --cursor-color: #a3e635;
+  --cursor-glow-color: rgba(163, 230, 53, 0.6);
+  --cursor-glow-spread: 0.75rem;
+  --cursor-glow-filter: drop-shadow(0 0 0.5rem #a3e635);
+  
+  --cursor-block-bg: rgba(163, 230, 53, 0.25);
+  --cursor-block-border: 0.094rem solid #a3e635;
+  --cursor-block-radius: 0.3125rem;
+  
+  --cursor-secondary-color: #65a30d;
+  --cursor-secondary-glow: rgba(101, 163, 13, 0.4);
+  
+  --cursor-blink-duration: 1.1s;
+  --cursor-transition-smooth: all 0.08s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
