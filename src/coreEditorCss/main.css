@@ -1,0 +1,47 @@
+/* Core & Foundations */
+@import "./root.css";
+@import "./typography.css";
+
+/* Editor Core Mechanics */
+@import "./gutter.css";
+@import "./cursor.css";
+@import "./selection.css";
+@import "./active-line.css";
+@import "./scrollbars.css";
+
+/* Navigation & Code Structure */
+@import "./breadcrumbs.css";
+@import "./minimap.css";
+@import "./sidebar.css";
+@import "./file-tree.css";
+@import "./tabs.css";
+@import "./status-bar.css";
+
+/* Code Intelligence & Decorators */
+@import "./tokens.css";
+@import "./highlight.css";
+@import "./autocompletion.css";
+@import "./hover-card.css";
+@import "./inline-hints.css";
+@import "./folding.css";
+@import "./error.css";
+@import "./lint-panel.css";
+
+/* Structural UI Elements */
+@import "./buttons.css";
+@import "./options.css";
+@import "./dropdowns.css";
+
+/* Overlays, Popups & Dialogs */
+@import "./modal.css";
+@import "./prompt.css";
+@import "./commandpopup.css";
+@import "./contextmenu.css";
+@import "./tooltip.css";
+
+/* Search & Diff Utilities */
+@import "./search.css";
+@import "./filter.css";
+@import "./diff-viewer.css";
+@import "./git-indicators.css";
+@import "./terminal.css";
