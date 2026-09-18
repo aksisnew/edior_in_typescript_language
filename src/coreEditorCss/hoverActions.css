@@ -1,0 +1,70 @@
+/* Hover States ONLY (Strictly converted to rem) */
+
+.editor-tab:hover {
+  background-color: var(--bg-hover);
+  color: var(--text-main);
+}
+
+.tab-close:hover {
+  opacity: 1;
+  background-color: var(--border-color);
+}
+
+.top-bar-btn:hover {
+  background-color: var(--bg-hover);
+  color: var(--text-main);
+  border-color: var(--border-color);
+}
+
+.file-item:hover {
+  background-color: var(--bg-hover);
+  color: var(--text-main);
+}
+
+.symbol-item:hover {
+  background-color: var(--bg-hover);
+  color: var(--text-main);
+}
+
+.problem-item:hover {
+  background-color: var(--bg-hover);
+}
+
+.gutter-line:hover {
+  color: var(--text-muted);
+}
+
+.context-menu-item:hover {
+  background-color: var(--bg-hover);
+  color: var(--accent-secondary);
+}
+
+.bottom-bar-item:hover {
+  color: var(--text-main);
+}
+
+.api-btn:hover {
+  border-color: var(--accent-primary);
+  background-color: var(--bg-hover);
+}
+
+/* Missing Hovers (Created as requested) */
+
+.sidebar-tab-btn:hover {
+  color: var(--text-main);
+  background-color: var(--bg-hover);
+}
+
+.theme-selector:hover {
+  border-color: var(--border-subtle);
+  background-color: var(--bg-hover);
+}
+
+.search-input:hover {
+  border-color: var(--border-color);
+}
+
+/* Hover-adjacent Focus State converted to rem (for complete input interaction) */
+.search-input:focus {
+  border-color: var(--accent-primary);
+}
