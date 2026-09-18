@@ -1,0 +1,19 @@
+:root {
+  --bg-primary: #a193c0;
+  --bg-secondary: #9e95b3;
+  --bg-sidebar: #9271dd;
+  --bg-gutter: #614d88;
+  --bg-active-line: #7764a3b6;
+  --bg-selection: #7a45d4;
+  --bg-hover: #9084a7;
+  --border-color: #a09bac;
+  --border-subtle: #7a7583;
+  
+  --text-main: hsl(263, 100%, 86%);
+  --text-muted: #5500ff;
+  --text-dim: #6030c0;
+  
+  --accent-primary: #bb87e2;
+  --accent-secondary: #b271e0;
+  --accent-glow: rgba(153, 109, 187, 0.35);
+}
