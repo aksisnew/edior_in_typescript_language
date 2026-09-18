@@ -1,1 +1,36 @@
-
+.theme-plum-red {
+  --bg-primary: #210312;
+  --bg-secondary: #33051c;
+  --bg-sidebar: #19010d;
+  --bg-gutter: #1c020f;
+  --bg-active-line: #4a082a;
+  --bg-selection: #73003c;
+  --bg-hover: #5a0933;
+  --border-color: #801047;
+  --border-subtle: #54082e;
+  
+  --text-main: #fff0f6;
+  --text-muted: #e091b6;
+  --text-dim: #9e527a;
+  
+  --accent-primary: #ff0055;
+  --accent-secondary: #ff3377;
+  --accent-glow: rgba(255, 0, 85, 0.45);
+  
+  /* Syntax token colors - high contrast, vibrant fruity plum palette */
+  --token-keyword: #ff2a75;
+  --token-function: #ff8533;
+  --token-string: #ffcc00;
+  --token-number: #ff5500;
+  --token-comment: #a85880;
+  --token-type: #e600e6;
+  --token-variable: #ffb3d9;
+  --token-operator: #ff4d94;
+  --token-property: #ffaa00;
+  
+  /* Diagnostics */
+  --diag-error: #ff0033;
+  --diag-warning: #ffaa00;
+  --diag-info: #d966ff;
+  --diag-hint: #ff66a3;
+}
