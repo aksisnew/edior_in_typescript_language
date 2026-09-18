@@ -1,0 +1,24 @@
+.editor-cursor-block {
+  background-color: var(--accent-primary);
+  color: #121a10;
+  box-shadow: 0 0 8px var(--accent-glow);
+}
+
+/* Line / Vertical Cursor */
+.editor-cursor-line {
+  width: 2px;
+  background-color: var(--accent-primary);
+  box-shadow: 0 0 10px var(--accent-primary), 0 0 4px var(--accent-glow);
+}
+
+/* Underline Cursor */
+.editor-cursor-underline {
+  border-bottom: 2px solid var(--accent-primary);
+  box-shadow: 0 2px 8px var(--accent-glow);
+}
+
+/* Secondary / Multi-Cursors */
+.editor-cursor-secondary {
+  background-color: var(--accent-secondary);
+  opacity: 0.8;
+}
