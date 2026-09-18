@@ -1,5 +1,5 @@
 /* Modern Button Styles (Fruity Plum Red Theme) */
-
+@import "./button-all.css";
 .top-bar-btn {
   display: inline-flex;
   align-items: center;
